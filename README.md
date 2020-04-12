@@ -7,8 +7,8 @@ Written with Clojure language.
 
 ## Installation
 
-On server, json.txt url needs to be changed to point to some existing directory, and 
-json.js path needs to point to the json.js file that frontend is serving.
+On server, the core.clj needs some changes in url's used. The json.txt url needs to be changed 
+to point to some existing directory, and the json.js path needs to point to the json.js file that frontend is serving.
 Use 'lein uberjar' to create a jar file and run it on the server, 
 for example with 'nohup java -jar reittiopas_backend-0.1.0-standalone.jar &' on a Linux server.
 
