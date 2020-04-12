@@ -1,36 +1,26 @@
 # reittiopas_backend
 
-FIXME: description
+Backend part for Solidabis coding challenge 2020. 
+
+Software was written with VSCode on Windows.
+Written with Clojure language. 
 
 ## Installation
 
-Download from http://example.com/FIXME.
+On server, json.txt url needs to be changed to point to some existing directory, and 
+json.js path needs to point to the json.js file that frontend is serving.
+Use 'lein uberjar' to create a jar file and run it on the server, 
+for example with 'nohup java -jar reittiopas_backend-0.1.0-standalone.jar &' on a Linux server.
 
 ## Usage
 
-FIXME: explanation
-
-    $ java -jar reittiopas_backend-0.1.0-standalone.jar [args]
-
-## Options
-
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+Checks https://koodihaaste.solidabis.com/reittiopas.json url periodically for changes and 
+updates the json.js the frontend is serving. Route search frontend is thus kept up to date if 
+the json on the url changes.
 
 ## License
 
-Copyright © 2020 FIXME
+Copyright © 2020 Markus Kiili
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
