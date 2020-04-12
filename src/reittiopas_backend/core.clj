@@ -6,13 +6,11 @@
   (:use overtone.at-at))
 
 (defn checkNewMessages [ag]
-  (println "Creating periodic callback")
   "Gets json text from url and compares it to agent content. 
    If it is not yet there, updates the agent, json.txt, and served json.js. 
    Using agent avoids reading the text file on each url check."
   (fn []
     (let [{:keys [status headers body error] :as resp} (client/get "https://koodihaaste.solidabis.com/reittiopas.json")]
-      (println "checking url")
       (if error
         (println "Failed, exception: " error)
         (if (not= body @ag)
