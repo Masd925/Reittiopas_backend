@@ -9,8 +9,14 @@ Written with Clojure language.
 
 On server, the core.clj needs some changes in url's used. The json.txt url needs to be changed 
 to point to some existing directory, and the json.js path needs to point to the json.js file that frontend is serving.
-Use 'lein uberjar' to create a jar file and run it on the server, 
+Use Leiningen build tool command 'lein uberjar' on command line to create a jar file and run it on the server, 
 for example with 'nohup java -jar reittiopas_backend-0.1.0-standalone.jar &' on a Linux server.
+
+## Running tests
+
+Tests can be run using 'lein test' on command line in the project folder. 
+Tests check that backend code can fetch route json from url and update js file served by the front-end. 
+JSON is checked to contain valid json and some busstops and busroutes.
 
 ## Usage
 
