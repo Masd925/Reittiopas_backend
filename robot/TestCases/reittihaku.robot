@@ -10,7 +10,7 @@ ${from_button_xpath}          //div[@id="mista"]//span[@class="nodeElem" and tex
 ${to_button_xpath}            //div[@id="mihin"]//span[@class="nodeElem" and text()="P"]
 ${busstop_xpath}              //div[@id="button6"]
 ${hover_info_item_xpath}      //span[@class="hover_line_span"]
-${hover_info_header_xpath}    //div[@id="hove_start_line"]
+${hover_info_header_xpath}    //div[@id="hover_start_line"]
 
 ***Test Cases ***
 Check default route
