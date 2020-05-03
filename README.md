@@ -18,7 +18,7 @@ Backend clojure tests can be run using 'lein test' on command line in the projec
 Tests check that backend code can fetch route json from url and update js file served by the front-end. 
 JSON is checked to contain valid json and some busstops and busroutes.
 
-Robot framework UI tests can be run on command line with 'robot .\robot\TestCases\reittihaku.robot' on backend project root folder.
+Robot framework UI tests can be run on command line with 'robot .\TestCases\reittihaku.robot' on backend project robot folder.
 
 ## Usage
 
