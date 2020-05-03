@@ -14,9 +14,11 @@ for example with 'nohup java -jar reittiopas_backend-0.1.0-standalone.jar &' on 
 
 ## Running tests
 
-Tests can be run using 'lein test' on command line in the project folder. 
+Backend clojure tests can be run using 'lein test' on command line in the project folder. 
 Tests check that backend code can fetch route json from url and update js file served by the front-end. 
 JSON is checked to contain valid json and some busstops and busroutes.
+
+Robot framework UI tests can be run on command line with 'robot .\robot\TestCases\reittihaku.robot' on backend project root folder.
 
 ## Usage
 
